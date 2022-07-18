@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Main {
+public class ProgramaLista {
   
   public static boolean inserir(int numero, int[] v) {
     boolean verificar=false;
@@ -123,6 +123,7 @@ public class Main {
     
 
     //Impresão do vetor original
+    System.out.print("\nVetor original: ");
     for(int i=0;i<vetor.length-1;i++)
       System.out.print(vetor[i]+" ");
     System.out.println(vetor[vetor.length-1]);
@@ -134,20 +135,20 @@ public class Main {
         
       if(!resultado){
         System.out.println("Inserir: false");
+        System.out.print("Vetor após operação: ");
         for(int i=0;i<vetor.length-1;i++)
           System.out.print(vetor[i]+" ");
         System.out.println(vetor[vetor.length-1]);
-        System.out.println("Não foi possível inserir o elemento na lista, ela está cheia");
       }
         
       else{
         System.out.println("Inserir: true");
 
         //Impressão do vetor após a inserção
+        System.out.print("Vetor após operação: ");
         for(int i=0;i<vetor.length-1;i++)
           System.out.print(vetor[i]+" ");
         System.out.println(vetor[vetor.length-1]);
-        System.out.println("Elemento inserido na lista com sucesso");
       }
     }
 
@@ -158,22 +159,21 @@ public class Main {
         
       if(!resultado){
         System.out.println("Remover: false");
+        System.out.print("Vetor após operação: ");
         for(int i=0;i<vetor.length-1;i++)
           System.out.print(vetor[i]+" ");
         System.out.println(vetor[vetor.length-1]);
-        System.out.println("Elemento não encontrado");
       }
         
       else{
         System.out.println("Remover: true");
         
         //Impressão do vetor após a remoção
+        System.out.print("Vetor após operação: ");
         for(int i=0;i<vetor.length-1;i++)
           System.out.print(vetor[i]+" ");
         System.out.println(vetor[vetor.length-1]);
-        System.out.println("Elemento removido da lista com sucesso");
       }
     }
   }
-  
 }
